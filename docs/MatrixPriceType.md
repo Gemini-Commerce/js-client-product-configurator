@@ -1,9 +1,12 @@
-# ProductConfiguratorService.MatrixPriceType
+# # MatrixPriceType
+
 
 ## Properties
 
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**pricelistGrns** | **[String]** |  | [optional] 
+**pricelistGrns**| **[String]** |   | [optional]
 
 
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

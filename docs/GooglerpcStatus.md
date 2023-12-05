@@ -1,11 +1,14 @@
-# ProductConfiguratorService.GooglerpcStatus
+# # GooglerpcStatus
+
 
 ## Properties
 
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**code** | **Number** |  | [optional] 
-**message** | **String** |  | [optional] 
-**details** | [**[ProtobufAny]**](ProtobufAny.md) |  | [optional] 
+**code**| **Number** |   | [optional]
+**message**| **String** |   | [optional]
+**details**| [**[ProtobufAny]**](ProtobufAny.md) |   | [optional]
 
 
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

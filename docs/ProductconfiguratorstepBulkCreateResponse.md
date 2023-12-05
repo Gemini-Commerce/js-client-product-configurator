@@ -1,9 +1,12 @@
-# ProductConfiguratorService.ProductconfiguratorstepBulkCreateResponse
+# # ProductconfiguratorstepBulkCreateResponse
+
 
 ## Properties
 
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**steps** | [**[ProductconfiguratorstepEntity]**](ProductconfiguratorstepEntity.md) |  | [optional] 
+**steps**| [**[ProductconfiguratorstepEntity]**](ProductconfiguratorstepEntity.md) |   | [optional]
 
 
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

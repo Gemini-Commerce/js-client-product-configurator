@@ -1,10 +1,13 @@
-# ProductConfiguratorService.ListMatricesRequestFilter
+# # ListMatricesRequestFilter
+
 
 ## Properties
 
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**propertyType** | [**[ProductconfiguratorPropertyType]**](ProductconfiguratorPropertyType.md) |  | [optional] 
-**propertyKey** | **[String]** |  | [optional] 
+**propertyType**| [**[ProductconfiguratorPropertyType]**](ProductconfiguratorPropertyType.md) |   | [optional]
+**propertyKey**| **[String]** |   | [optional]
 
 
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

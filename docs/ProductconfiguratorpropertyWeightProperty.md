@@ -1,10 +1,13 @@
-# ProductConfiguratorService.ProductconfiguratorpropertyWeightProperty
+# # ProductconfiguratorpropertyWeightProperty
+
 
 ## Properties
 
+
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**weight** | **Number** |  | [optional] 
-**weightUnit** | [**ProductconfiguratorWeightUnit**](ProductconfiguratorWeightUnit.md) |  | [optional] 
+**weight**| **Number** |   | [optional]
+**weightUnit**| [**ProductconfiguratorWeightUnit**](ProductconfiguratorWeightUnit.md) |  for more information please, see Model/ProductconfiguratorWeightUnit.php  | [optional]
 
 
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
