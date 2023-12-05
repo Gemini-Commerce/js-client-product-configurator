@@ -5,4 +5,4 @@ generate:
 push:
 	bash git_push.sh
 publish:
-	#GOPROXY=proxy.golang.org go list -m github.com/Gemini-Commerce/js-client-product-confgiurator@v${version}
+	npm publish --access public
