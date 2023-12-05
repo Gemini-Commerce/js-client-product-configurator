@@ -1,4 +1,4 @@
-version=1.0.0
+version=1.0.1
 
 generate:
 	$(MAKE) -C ./modules/js-client-generator/ generate-js-client service=product-configurator version=${version}
