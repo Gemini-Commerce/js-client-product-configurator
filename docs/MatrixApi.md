@@ -1,4 +1,4 @@
-# ProductConfiguratorService.MatrixApi
+# GeminiCommerceJsClientProductConfigurator.MatrixApi
 
 All URIs are relative to *https://product-configurator.api.gogemini.io*
 
@@ -24,15 +24,15 @@ Establish a new matrix by specifying the tenant ID. Utilize a POST request with 
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.MatrixApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.MatrixApi();
 let tenantId = "tenantId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratormatrixCreateRequest(); // ProductconfiguratormatrixCreateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratormatrixCreateRequest(); // ProductconfiguratormatrixCreateRequest | 
 apiInstance.productConfiguratorCreateMatrix(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -75,13 +75,13 @@ Remove a specific matrix by specifying the tenant and matrix IDs. Ensure precisi
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.MatrixApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.MatrixApi();
 let tenantId = "tenantId_example"; // String | 
 let matrixId = "matrixId_example"; // String | 
 apiInstance.productConfiguratorDeleteMatrix(tenantId, matrixId, (error, data, response) => {
@@ -126,13 +126,13 @@ Retrieve matrix details by specifying the tenant and matrix IDs. Utilize a GET r
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.MatrixApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.MatrixApi();
 let tenantId = "tenantId_example"; // String | 
 let matrixId = "matrixId_example"; // String | 
 apiInstance.productConfiguratorGetMatrix(tenantId, matrixId, (error, data, response) => {
@@ -177,17 +177,17 @@ Retrieve a list of matrices for a specific configurator based on tenant and conf
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.MatrixApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.MatrixApi();
 let tenantId = "tenantId_example"; // String | 
 let configuratorId = "configuratorId_example"; // String | 
 let pageSize = "pageSize_example"; // String | 
-let body = new ProductConfiguratorService.MatrixListMatricesRequest(); // MatrixListMatricesRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.MatrixListMatricesRequest(); // MatrixListMatricesRequest | 
 apiInstance.productConfiguratorListMatrices(tenantId, configuratorId, pageSize, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -232,13 +232,13 @@ Remove a specific pricelist from a matrix by specifying the tenant, matrix, and 
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.MatrixApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.MatrixApi();
 let tenantId = "tenantId_example"; // String | 
 let matrixId = "matrixId_example"; // String | 
 let pricelistGrn = "pricelistGrn_example"; // String | 
@@ -285,16 +285,16 @@ Modify an existing matrix by specifying the tenant and matrix IDs. Utilize a PUT
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.MatrixApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.MatrixApi();
 let tenantId = "tenantId_example"; // String | 
 let matrixId = "matrixId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratormatrixUpdateRequest(); // ProductconfiguratormatrixUpdateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratormatrixUpdateRequest(); // ProductconfiguratormatrixUpdateRequest | 
 apiInstance.productConfiguratorUpdateMatrix(tenantId, matrixId, body, (error, data, response) => {
   if (error) {
     console.error(error);

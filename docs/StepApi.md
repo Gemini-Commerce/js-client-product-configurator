@@ -1,4 +1,4 @@
-# ProductConfiguratorService.StepApi
+# GeminiCommerceJsClientProductConfigurator.StepApi
 
 All URIs are relative to *https://product-configurator.api.gogemini.io*
 
@@ -24,16 +24,16 @@ Add multiple steps to an existing product configurator simultaneously. Submit a 
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.StepApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.StepApi();
 let tenantId = "tenantId_example"; // String | 
 let configuratorId = "configuratorId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorstepBulkCreateRequest(); // ProductconfiguratorstepBulkCreateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepBulkCreateRequest(); // ProductconfiguratorstepBulkCreateRequest | 
 apiInstance.productConfiguratorBulkCreateSteps(tenantId, configuratorId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -77,15 +77,15 @@ Efficiently remove multiple steps from a product configurator using a bulk delet
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.StepApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.StepApi();
 let tenantId = "tenantId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorstepBulkDeleteRequest(); // ProductconfiguratorstepBulkDeleteRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepBulkDeleteRequest(); // ProductconfiguratorstepBulkDeleteRequest | 
 apiInstance.productConfiguratorBulkDeleteSteps(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -128,16 +128,16 @@ Duplicate an existing step from the source to a specified tenant. Utilize a POST
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.StepApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.StepApi();
 let tenantId = "tenantId_example"; // String | 
 let sourceStepId = "sourceStepId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorstepCopyRequest(); // ProductconfiguratorstepCopyRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepCopyRequest(); // ProductconfiguratorstepCopyRequest | 
 apiInstance.productConfiguratorCopyStep(tenantId, sourceStepId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -181,16 +181,16 @@ Add a new step to an existing product configurator by specifying the tenant and 
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.StepApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.StepApi();
 let tenantId = "tenantId_example"; // String | 
 let configuratorId = "configuratorId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorstepCreateRequest(); // ProductconfiguratorstepCreateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepCreateRequest(); // ProductconfiguratorstepCreateRequest | 
 apiInstance.productConfiguratorCreateStep(tenantId, configuratorId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -234,13 +234,13 @@ Remove a step from a product configurator by specifying the tenant and step IDs.
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.StepApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.StepApi();
 let tenantId = "tenantId_example"; // String | 
 let stepId = "stepId_example"; // String | 
 apiInstance.productConfiguratorDeleteStep(tenantId, stepId, (error, data, response) => {
@@ -285,16 +285,16 @@ Modify an existing step within a product configurator by specifying the tenant a
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.StepApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.StepApi();
 let tenantId = "tenantId_example"; // String | 
 let stepId = "stepId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorstepUpdateRequest(); // ProductconfiguratorstepUpdateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepUpdateRequest(); // ProductconfiguratorstepUpdateRequest | 
 apiInstance.productConfiguratorUpdateStep(tenantId, stepId, body, (error, data, response) => {
   if (error) {
     console.error(error);

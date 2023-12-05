@@ -1,4 +1,4 @@
-# ProductConfiguratorService.DependencyApi
+# GeminiCommerceJsClientProductConfigurator.DependencyApi
 
 All URIs are relative to *https://product-configurator.api.gogemini.io*
 
@@ -22,16 +22,16 @@ Establish a new dependency for an existing step by specifying the tenant and ste
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.DependencyApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.DependencyApi();
 let tenantId = "tenantId_example"; // String | 
 let stepId = "stepId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratordependencyCreateRequest(); // ProductconfiguratordependencyCreateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratordependencyCreateRequest(); // ProductconfiguratordependencyCreateRequest | 
 apiInstance.productConfiguratorCreateDependency(tenantId, stepId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -75,13 +75,13 @@ Remove a specific dependency by specifying the tenant and dependency IDs. Ensure
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.DependencyApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.DependencyApi();
 let tenantId = "tenantId_example"; // String | 
 let dependencyId = "dependencyId_example"; // String | 
 apiInstance.productConfiguratorDeleteDependency(tenantId, dependencyId, (error, data, response) => {
@@ -126,16 +126,16 @@ Retrieve a list of dependencies based on the specified tenant ID. Customize resu
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.DependencyApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.DependencyApi();
 let tenantId = "tenantId_example"; // String | 
 let pageSize = 789; // Number | 
-let body = new ProductConfiguratorService.DependencyListDependenciesRequest(); // DependencyListDependenciesRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.DependencyListDependenciesRequest(); // DependencyListDependenciesRequest | 
 apiInstance.productConfiguratorListDependencies(tenantId, pageSize, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -179,16 +179,16 @@ Modify an existing dependency by specifying the tenant and dependency IDs. Utili
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.DependencyApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.DependencyApi();
 let tenantId = "tenantId_example"; // String | 
 let dependencyId = "dependencyId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratordependencyUpdateRequest(); // ProductconfiguratordependencyUpdateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratordependencyUpdateRequest(); // ProductconfiguratordependencyUpdateRequest | 
 apiInstance.productConfiguratorUpdateDependency(tenantId, dependencyId, body, (error, data, response) => {
   if (error) {
     console.error(error);

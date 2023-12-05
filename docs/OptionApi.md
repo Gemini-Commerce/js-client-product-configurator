@@ -1,4 +1,4 @@
-# ProductConfiguratorService.OptionApi
+# GeminiCommerceJsClientProductConfigurator.OptionApi
 
 All URIs are relative to *https://product-configurator.api.gogemini.io*
 
@@ -26,16 +26,16 @@ Add multiple options to an existing step simultaneously. Submit a POST request w
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.OptionApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.OptionApi();
 let tenantId = "tenantId_example"; // String | 
 let stepId = "stepId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratoroptionBulkCreateRequest(); // ProductconfiguratoroptionBulkCreateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionBulkCreateRequest(); // ProductconfiguratoroptionBulkCreateRequest | 
 apiInstance.productConfiguratorBulkCreateOptions(tenantId, stepId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -79,15 +79,15 @@ Efficiently remove multiple options from configurations using a bulk delete oper
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.OptionApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.OptionApi();
 let tenantId = "tenantId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratoroptionBulkDeleteRequest(); // ProductconfiguratoroptionBulkDeleteRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionBulkDeleteRequest(); // ProductconfiguratoroptionBulkDeleteRequest | 
 apiInstance.productConfiguratorBulkDeleteOptions(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -130,15 +130,15 @@ Effortlessly update multiple options. Specify the tenant ID and submit a PUT req
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.OptionApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.OptionApi();
 let tenantId = "tenantId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratoroptionBulkUpdateRequest(); // ProductconfiguratoroptionBulkUpdateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionBulkUpdateRequest(); // ProductconfiguratoroptionBulkUpdateRequest | 
 apiInstance.productConfiguratorBulkUpdateOptions(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -181,16 +181,16 @@ Duplicate an existing option from the source to a specified tenant. Utilize a PO
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.OptionApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.OptionApi();
 let tenantId = "tenantId_example"; // String | 
 let sourceOptionId = "sourceOptionId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratoroptionCopyRequest(); // ProductconfiguratoroptionCopyRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionCopyRequest(); // ProductconfiguratoroptionCopyRequest | 
 apiInstance.productConfiguratorCopyOption(tenantId, sourceOptionId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -234,16 +234,16 @@ Integrate a new option into an existing step by specifying the tenant and step I
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.OptionApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.OptionApi();
 let tenantId = "tenantId_example"; // String | 
 let stepId = "stepId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratoroptionCreateRequest(); // ProductconfiguratoroptionCreateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionCreateRequest(); // ProductconfiguratoroptionCreateRequest | 
 apiInstance.productConfiguratorCreateOption(tenantId, stepId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -287,13 +287,13 @@ Remove a specific option by specifying the tenant and option IDs. Ensure precisi
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.OptionApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.OptionApi();
 let tenantId = "tenantId_example"; // String | 
 let optionId = "optionId_example"; // String | 
 apiInstance.productConfiguratorDeleteOption(tenantId, optionId, (error, data, response) => {
@@ -338,17 +338,17 @@ Retrieve a list of options for a specific step based on tenant and step IDs. Cus
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.OptionApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.OptionApi();
 let tenantId = "tenantId_example"; // String | 
 let stepId = "stepId_example"; // String | 
 let pageSize = 789; // Number | 
-let body = new ProductConfiguratorService.OptionListOptionsRequest(); // OptionListOptionsRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.OptionListOptionsRequest(); // OptionListOptionsRequest | 
 apiInstance.productConfiguratorListOptions(tenantId, stepId, pageSize, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -393,16 +393,16 @@ Modify an existing option by specifying the tenant and option IDs. Utilize a PUT
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.OptionApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.OptionApi();
 let tenantId = "tenantId_example"; // String | 
 let optionId = "optionId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratoroptionUpdateRequest(); // ProductconfiguratoroptionUpdateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionUpdateRequest(); // ProductconfiguratoroptionUpdateRequest | 
 apiInstance.productConfiguratorUpdateOption(tenantId, optionId, body, (error, data, response) => {
   if (error) {
     console.error(error);

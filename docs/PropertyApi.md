@@ -1,4 +1,4 @@
-# ProductConfiguratorService.PropertyApi
+# GeminiCommerceJsClientProductConfigurator.PropertyApi
 
 All URIs are relative to *https://product-configurator.api.gogemini.io*
 
@@ -23,15 +23,15 @@ Efficiently add multiple properties to configurations with a bulk create operati
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.PropertyApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.PropertyApi();
 let tenantId = "tenantId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorpropertyBulkCreateRequest(); // ProductconfiguratorpropertyBulkCreateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyBulkCreateRequest(); // ProductconfiguratorpropertyBulkCreateRequest | 
 apiInstance.productConfiguratorBulkCreateProperties(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -74,15 +74,15 @@ Effortlessly update multiple properties. Specify the tenant ID and submit a PUT 
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.PropertyApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.PropertyApi();
 let tenantId = "tenantId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorpropertyBulkUpdateRequest(); // ProductconfiguratorpropertyBulkUpdateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyBulkUpdateRequest(); // ProductconfiguratorpropertyBulkUpdateRequest | 
 apiInstance.productConfiguratorBulkUpdateProperties(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -125,15 +125,15 @@ Integrate a new property into configurations by specifying the tenant ID. Use a 
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.PropertyApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.PropertyApi();
 let tenantId = "tenantId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorpropertyCreateRequest(); // ProductconfiguratorpropertyCreateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyCreateRequest(); // ProductconfiguratorpropertyCreateRequest | 
 apiInstance.productConfiguratorCreateProperty(tenantId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -176,17 +176,17 @@ Retrieve a list of properties for a specific matrix based on tenant and matrix I
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.PropertyApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.PropertyApi();
 let tenantId = "tenantId_example"; // String | 
 let matrixId = "matrixId_example"; // String | 
 let pageSize = "pageSize_example"; // String | 
-let body = new ProductConfiguratorService.PropertyListPropertiesRequest(); // PropertyListPropertiesRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.PropertyListPropertiesRequest(); // PropertyListPropertiesRequest | 
 apiInstance.productConfiguratorListProperties(tenantId, matrixId, pageSize, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -231,16 +231,16 @@ Modify an existing property by specifying the tenant and property IDs. Utilize a
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.PropertyApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.PropertyApi();
 let tenantId = "tenantId_example"; // String | 
 let propertyId = "propertyId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorpropertyUpdateRequest(); // ProductconfiguratorpropertyUpdateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyUpdateRequest(); // ProductconfiguratorpropertyUpdateRequest | 
 apiInstance.productConfiguratorUpdateProperty(tenantId, propertyId, body, (error, data, response) => {
   if (error) {
     console.error(error);

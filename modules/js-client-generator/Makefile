@@ -18,7 +18,6 @@ generate-js-client:
 	generate -i js-client-generator/modules/proto/${lower_service}/${lower_service}.swagger.json \
 	--git-repo-id js-client-${service} --git-user-id gemini-commerce --git-host github.com \
 	-g javascript -t js-client-generator/templates/js -o js-client-${lower_service} \
-	--additional-properties ${artifact_version},enumClassPrefix=true,structPrefix=true,\
-	packageName="${lower_service}",licenseName=AGPL-3.0,\
-	npmName="@gemini-commerce/js-client-${lower_service}",\
-	npmVersion="${version}"
+	--additional-properties ${artifact_version}\
+	packageName="@gemini-commerce/js-client-${lower_service}",licenseName=AGPL-3.0,\
+	projectName="@gemini-commerce/js-client-${lower_service}",projectVersion="${version}",\

@@ -1,6 +1,6 @@
-# product_configurator_service
+# @gemini-commerce/js-client-product-configurator
 
-ProductConfiguratorService - JavaScript client for product_configurator_service
+GeminiCommerceJsClientProductConfigurator - JavaScript client for @gemini-commerce/js-client-product-configurator
 ## Introduction
 
 This comprehensive guide will equip you with the knowledge to integrate and leverage our Product Configurator Service in your applications.
@@ -73,7 +73,7 @@ To publish the library as a [npm](https://www.npmjs.com/), please follow the pro
 Then install it via:
 
 ```shell
-npm install product_configurator_service --save
+npm install @gemini-commerce/js-client-product-configurator --save
 ```
 
 Finally, you need to build the module:
@@ -96,7 +96,7 @@ Next, [link](https://docs.npmjs.com/cli/link) it globally in npm with the follow
 npm link
 ```
 
-To use the link you just defined in your project, switch to the directory you want to use your product_configurator_service from, and run:
+To use the link you just defined in your project, switch to the directory you want to use your @gemini-commerce/js-client-product-configurator from, and run:
 
 ```shell
 npm link /path/to/<JAVASCRIPT_CLIENT_DIR>
@@ -152,14 +152,14 @@ module: {
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
-var ProductConfiguratorService = require('product_configurator_service');
+var GeminiCommerceJsClientProductConfigurator = require('@gemini-commerce/js-client-product-configurator');
 
-var defaultClient = ProductConfiguratorService.ApiClient.instance;
+var defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 var standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = "YOUR ACCESS TOKEN"
 
-var api = new ProductConfiguratorService.ConfigurationApi()
+var api = new GeminiCommerceJsClientProductConfigurator.ConfigurationApi()
 var tenantId = "tenantId_example"; // {String} 
 var productId = "productId_example"; // {String} 
 var opts = {
@@ -182,139 +182,139 @@ All URIs are relative to *https://product-configurator.api.gogemini.io*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*ProductConfiguratorService.ConfigurationApi* | [**productConfiguratorGetAvailableConfiguration**](docs/ConfigurationApi.md#productConfiguratorGetAvailableConfiguration) | **GET** /v1/{tenantId}/product/{productId}/configuration | Get Available Configuration
-*ProductConfiguratorService.ConfigurationApi* | [**productConfiguratorGetAvailableConfiguration2**](docs/ConfigurationApi.md#productConfiguratorGetAvailableConfiguration2) | **POST** /v1/{tenantId}/product/{productId}/configuration | Get Available Configuration
-*ProductConfiguratorService.ConfigurationApi* | [**productConfiguratorGetConfigurationFromSelections**](docs/ConfigurationApi.md#productConfiguratorGetConfigurationFromSelections) | **POST** /v1/{tenantId}/product/{productId}/configuration-from-selections | Get Configuration from Selections
-*ProductConfiguratorService.ConfiguratorApi* | [**productConfiguratorCopyConfigurator**](docs/ConfiguratorApi.md#productConfiguratorCopyConfigurator) | **POST** /v1/{tenantId}/product/{sourceConfiguratorId}/copy | Copy Configurator
-*ProductConfiguratorService.ConfiguratorApi* | [**productConfiguratorCreateConfigurator**](docs/ConfiguratorApi.md#productConfiguratorCreateConfigurator) | **POST** /v1/{tenantId}/product/{productId}/create | Create Configurator
-*ProductConfiguratorService.ConfiguratorApi* | [**productConfiguratorDeleteConfigurator**](docs/ConfiguratorApi.md#productConfiguratorDeleteConfigurator) | **DELETE** /v1/{tenantId}/configurator/{configuratorId} | Delete Configurator
-*ProductConfiguratorService.ConfiguratorApi* | [**productConfiguratorGetConfiguratorByProductId**](docs/ConfiguratorApi.md#productConfiguratorGetConfiguratorByProductId) | **GET** /v1/{tenantId}/product/{productId} | Get Product Configurator by Product ID
-*ProductConfiguratorService.ConfiguratorApi* | [**productConfiguratorGetConfiguratorByProductId2**](docs/ConfiguratorApi.md#productConfiguratorGetConfiguratorByProductId2) | **GET** /v1/{tenantId}/product/{productId}/status/{status} | Get Product Configurator by Product ID
-*ProductConfiguratorService.ConfiguratorApi* | [**productConfiguratorListConfigurators**](docs/ConfiguratorApi.md#productConfiguratorListConfigurators) | **POST** /v1/{tenantId}/product/{productId}/page-size/{pageSize}/configurators | List Product Configurators
-*ProductConfiguratorService.ConfiguratorApi* | [**productConfiguratorUpdateConfigurator**](docs/ConfiguratorApi.md#productConfiguratorUpdateConfigurator) | **PUT** /v1/{tenantId}/configurator/{configuratorId} | Update Configurator
-*ProductConfiguratorService.DependencyApi* | [**productConfiguratorCreateDependency**](docs/DependencyApi.md#productConfiguratorCreateDependency) | **POST** /v1/{tenantId}/step/{stepId}/dependency/create | Create Dependency
-*ProductConfiguratorService.DependencyApi* | [**productConfiguratorDeleteDependency**](docs/DependencyApi.md#productConfiguratorDeleteDependency) | **DELETE** /v1/{tenantId}/dependency/{dependencyId} | Delete Dependency
-*ProductConfiguratorService.DependencyApi* | [**productConfiguratorListDependencies**](docs/DependencyApi.md#productConfiguratorListDependencies) | **POST** /v1/{tenantId}/page-size/{pageSize}/dependencies | List Dependencies
-*ProductConfiguratorService.DependencyApi* | [**productConfiguratorUpdateDependency**](docs/DependencyApi.md#productConfiguratorUpdateDependency) | **PUT** /v1/{tenantId}/dependency/{dependencyId} | Update Dependency
-*ProductConfiguratorService.MatrixApi* | [**productConfiguratorCreateMatrix**](docs/MatrixApi.md#productConfiguratorCreateMatrix) | **POST** /v1/{tenantId}/matrix/create | Create Matrix
-*ProductConfiguratorService.MatrixApi* | [**productConfiguratorDeleteMatrix**](docs/MatrixApi.md#productConfiguratorDeleteMatrix) | **DELETE** /v1/{tenantId}/matrix/{matrixId} | Delete Matrix
-*ProductConfiguratorService.MatrixApi* | [**productConfiguratorGetMatrix**](docs/MatrixApi.md#productConfiguratorGetMatrix) | **GET** /v1/{tenantId}/matrix/{matrixId} | Get Matrix
-*ProductConfiguratorService.MatrixApi* | [**productConfiguratorListMatrices**](docs/MatrixApi.md#productConfiguratorListMatrices) | **POST** /v1/{tenantId}/configurator/{configuratorId}/page-size/{pageSize}/matrices | List Matrices
-*ProductConfiguratorService.MatrixApi* | [**productConfiguratorRemovePricelistFromMatrix**](docs/MatrixApi.md#productConfiguratorRemovePricelistFromMatrix) | **DELETE** /v1/{tenantId}/matrix/{matrixId}/pricelist/{pricelistGrn} | Remove Pricelist from Matrix
-*ProductConfiguratorService.MatrixApi* | [**productConfiguratorUpdateMatrix**](docs/MatrixApi.md#productConfiguratorUpdateMatrix) | **PUT** /v1/{tenantId}/matrix/{matrixId} | Update Matrix
-*ProductConfiguratorService.OptionApi* | [**productConfiguratorBulkCreateOptions**](docs/OptionApi.md#productConfiguratorBulkCreateOptions) | **POST** /v1/{tenantId}/step/{stepId}/option/create/bulk | Bulk Create Options
-*ProductConfiguratorService.OptionApi* | [**productConfiguratorBulkDeleteOptions**](docs/OptionApi.md#productConfiguratorBulkDeleteOptions) | **POST** /v1/{tenantId}/option/delete/bulk | Bulk Delete Options
-*ProductConfiguratorService.OptionApi* | [**productConfiguratorBulkUpdateOptions**](docs/OptionApi.md#productConfiguratorBulkUpdateOptions) | **PUT** /v1/{tenantId}/option/bulk | Bulk Update Options
-*ProductConfiguratorService.OptionApi* | [**productConfiguratorCopyOption**](docs/OptionApi.md#productConfiguratorCopyOption) | **POST** /v1/{tenantId}/option/{sourceOptionId}/copy | Copy Option
-*ProductConfiguratorService.OptionApi* | [**productConfiguratorCreateOption**](docs/OptionApi.md#productConfiguratorCreateOption) | **POST** /v1/{tenantId}/step/{stepId}/option/create | Create Option
-*ProductConfiguratorService.OptionApi* | [**productConfiguratorDeleteOption**](docs/OptionApi.md#productConfiguratorDeleteOption) | **DELETE** /v1/{tenantId}/option/{optionId} | Delete Option
-*ProductConfiguratorService.OptionApi* | [**productConfiguratorListOptions**](docs/OptionApi.md#productConfiguratorListOptions) | **POST** /v1/{tenantId}/step/{stepId}/page-size/{pageSize}/options | List Options
-*ProductConfiguratorService.OptionApi* | [**productConfiguratorUpdateOption**](docs/OptionApi.md#productConfiguratorUpdateOption) | **PUT** /v1/{tenantId}/option/{optionId} | Update Option
-*ProductConfiguratorService.PropertyApi* | [**productConfiguratorBulkCreateProperties**](docs/PropertyApi.md#productConfiguratorBulkCreateProperties) | **POST** /v1/{tenantId}/property/create/bulk | Bulk Create Properties
-*ProductConfiguratorService.PropertyApi* | [**productConfiguratorBulkUpdateProperties**](docs/PropertyApi.md#productConfiguratorBulkUpdateProperties) | **PUT** /v1/{tenantId}/properties/bulk | Bulk Update Properties
-*ProductConfiguratorService.PropertyApi* | [**productConfiguratorCreateProperty**](docs/PropertyApi.md#productConfiguratorCreateProperty) | **POST** /v1/{tenantId}/property/create | Create Property
-*ProductConfiguratorService.PropertyApi* | [**productConfiguratorListProperties**](docs/PropertyApi.md#productConfiguratorListProperties) | **POST** /v1/{tenantId}/matrix/{matrixId}/page-size/{pageSize}/properties | List Properties
-*ProductConfiguratorService.PropertyApi* | [**productConfiguratorUpdateProperty**](docs/PropertyApi.md#productConfiguratorUpdateProperty) | **PUT** /v1/{tenantId}/property/{propertyId} | Update Property
-*ProductConfiguratorService.StepApi* | [**productConfiguratorBulkCreateSteps**](docs/StepApi.md#productConfiguratorBulkCreateSteps) | **POST** /v1/{tenantId}/configurator/{configuratorId}/step/create/bulk | Bulk Create Steps
-*ProductConfiguratorService.StepApi* | [**productConfiguratorBulkDeleteSteps**](docs/StepApi.md#productConfiguratorBulkDeleteSteps) | **POST** /v1/{tenantId}/step/delete/bulk | Bulk Delete Steps
-*ProductConfiguratorService.StepApi* | [**productConfiguratorCopyStep**](docs/StepApi.md#productConfiguratorCopyStep) | **POST** /v1/{tenantId}/step/{sourceStepId}/copy | Copy Step
-*ProductConfiguratorService.StepApi* | [**productConfiguratorCreateStep**](docs/StepApi.md#productConfiguratorCreateStep) | **POST** /v1/{tenantId}/configurator/{configuratorId}/step/create | Create Step
-*ProductConfiguratorService.StepApi* | [**productConfiguratorDeleteStep**](docs/StepApi.md#productConfiguratorDeleteStep) | **DELETE** /v1/{tenantId}/step/{stepId} | Delete Step
-*ProductConfiguratorService.StepApi* | [**productConfiguratorUpdateStep**](docs/StepApi.md#productConfiguratorUpdateStep) | **PUT** /v1/{tenantId}/step/{stepId} | Update Step
+*GeminiCommerceJsClientProductConfigurator.ConfigurationApi* | [**productConfiguratorGetAvailableConfiguration**](docs/ConfigurationApi.md#productConfiguratorGetAvailableConfiguration) | **GET** /v1/{tenantId}/product/{productId}/configuration | Get Available Configuration
+*GeminiCommerceJsClientProductConfigurator.ConfigurationApi* | [**productConfiguratorGetAvailableConfiguration2**](docs/ConfigurationApi.md#productConfiguratorGetAvailableConfiguration2) | **POST** /v1/{tenantId}/product/{productId}/configuration | Get Available Configuration
+*GeminiCommerceJsClientProductConfigurator.ConfigurationApi* | [**productConfiguratorGetConfigurationFromSelections**](docs/ConfigurationApi.md#productConfiguratorGetConfigurationFromSelections) | **POST** /v1/{tenantId}/product/{productId}/configuration-from-selections | Get Configuration from Selections
+*GeminiCommerceJsClientProductConfigurator.ConfiguratorApi* | [**productConfiguratorCopyConfigurator**](docs/ConfiguratorApi.md#productConfiguratorCopyConfigurator) | **POST** /v1/{tenantId}/product/{sourceConfiguratorId}/copy | Copy Configurator
+*GeminiCommerceJsClientProductConfigurator.ConfiguratorApi* | [**productConfiguratorCreateConfigurator**](docs/ConfiguratorApi.md#productConfiguratorCreateConfigurator) | **POST** /v1/{tenantId}/product/{productId}/create | Create Configurator
+*GeminiCommerceJsClientProductConfigurator.ConfiguratorApi* | [**productConfiguratorDeleteConfigurator**](docs/ConfiguratorApi.md#productConfiguratorDeleteConfigurator) | **DELETE** /v1/{tenantId}/configurator/{configuratorId} | Delete Configurator
+*GeminiCommerceJsClientProductConfigurator.ConfiguratorApi* | [**productConfiguratorGetConfiguratorByProductId**](docs/ConfiguratorApi.md#productConfiguratorGetConfiguratorByProductId) | **GET** /v1/{tenantId}/product/{productId} | Get Product Configurator by Product ID
+*GeminiCommerceJsClientProductConfigurator.ConfiguratorApi* | [**productConfiguratorGetConfiguratorByProductId2**](docs/ConfiguratorApi.md#productConfiguratorGetConfiguratorByProductId2) | **GET** /v1/{tenantId}/product/{productId}/status/{status} | Get Product Configurator by Product ID
+*GeminiCommerceJsClientProductConfigurator.ConfiguratorApi* | [**productConfiguratorListConfigurators**](docs/ConfiguratorApi.md#productConfiguratorListConfigurators) | **POST** /v1/{tenantId}/product/{productId}/page-size/{pageSize}/configurators | List Product Configurators
+*GeminiCommerceJsClientProductConfigurator.ConfiguratorApi* | [**productConfiguratorUpdateConfigurator**](docs/ConfiguratorApi.md#productConfiguratorUpdateConfigurator) | **PUT** /v1/{tenantId}/configurator/{configuratorId} | Update Configurator
+*GeminiCommerceJsClientProductConfigurator.DependencyApi* | [**productConfiguratorCreateDependency**](docs/DependencyApi.md#productConfiguratorCreateDependency) | **POST** /v1/{tenantId}/step/{stepId}/dependency/create | Create Dependency
+*GeminiCommerceJsClientProductConfigurator.DependencyApi* | [**productConfiguratorDeleteDependency**](docs/DependencyApi.md#productConfiguratorDeleteDependency) | **DELETE** /v1/{tenantId}/dependency/{dependencyId} | Delete Dependency
+*GeminiCommerceJsClientProductConfigurator.DependencyApi* | [**productConfiguratorListDependencies**](docs/DependencyApi.md#productConfiguratorListDependencies) | **POST** /v1/{tenantId}/page-size/{pageSize}/dependencies | List Dependencies
+*GeminiCommerceJsClientProductConfigurator.DependencyApi* | [**productConfiguratorUpdateDependency**](docs/DependencyApi.md#productConfiguratorUpdateDependency) | **PUT** /v1/{tenantId}/dependency/{dependencyId} | Update Dependency
+*GeminiCommerceJsClientProductConfigurator.MatrixApi* | [**productConfiguratorCreateMatrix**](docs/MatrixApi.md#productConfiguratorCreateMatrix) | **POST** /v1/{tenantId}/matrix/create | Create Matrix
+*GeminiCommerceJsClientProductConfigurator.MatrixApi* | [**productConfiguratorDeleteMatrix**](docs/MatrixApi.md#productConfiguratorDeleteMatrix) | **DELETE** /v1/{tenantId}/matrix/{matrixId} | Delete Matrix
+*GeminiCommerceJsClientProductConfigurator.MatrixApi* | [**productConfiguratorGetMatrix**](docs/MatrixApi.md#productConfiguratorGetMatrix) | **GET** /v1/{tenantId}/matrix/{matrixId} | Get Matrix
+*GeminiCommerceJsClientProductConfigurator.MatrixApi* | [**productConfiguratorListMatrices**](docs/MatrixApi.md#productConfiguratorListMatrices) | **POST** /v1/{tenantId}/configurator/{configuratorId}/page-size/{pageSize}/matrices | List Matrices
+*GeminiCommerceJsClientProductConfigurator.MatrixApi* | [**productConfiguratorRemovePricelistFromMatrix**](docs/MatrixApi.md#productConfiguratorRemovePricelistFromMatrix) | **DELETE** /v1/{tenantId}/matrix/{matrixId}/pricelist/{pricelistGrn} | Remove Pricelist from Matrix
+*GeminiCommerceJsClientProductConfigurator.MatrixApi* | [**productConfiguratorUpdateMatrix**](docs/MatrixApi.md#productConfiguratorUpdateMatrix) | **PUT** /v1/{tenantId}/matrix/{matrixId} | Update Matrix
+*GeminiCommerceJsClientProductConfigurator.OptionApi* | [**productConfiguratorBulkCreateOptions**](docs/OptionApi.md#productConfiguratorBulkCreateOptions) | **POST** /v1/{tenantId}/step/{stepId}/option/create/bulk | Bulk Create Options
+*GeminiCommerceJsClientProductConfigurator.OptionApi* | [**productConfiguratorBulkDeleteOptions**](docs/OptionApi.md#productConfiguratorBulkDeleteOptions) | **POST** /v1/{tenantId}/option/delete/bulk | Bulk Delete Options
+*GeminiCommerceJsClientProductConfigurator.OptionApi* | [**productConfiguratorBulkUpdateOptions**](docs/OptionApi.md#productConfiguratorBulkUpdateOptions) | **PUT** /v1/{tenantId}/option/bulk | Bulk Update Options
+*GeminiCommerceJsClientProductConfigurator.OptionApi* | [**productConfiguratorCopyOption**](docs/OptionApi.md#productConfiguratorCopyOption) | **POST** /v1/{tenantId}/option/{sourceOptionId}/copy | Copy Option
+*GeminiCommerceJsClientProductConfigurator.OptionApi* | [**productConfiguratorCreateOption**](docs/OptionApi.md#productConfiguratorCreateOption) | **POST** /v1/{tenantId}/step/{stepId}/option/create | Create Option
+*GeminiCommerceJsClientProductConfigurator.OptionApi* | [**productConfiguratorDeleteOption**](docs/OptionApi.md#productConfiguratorDeleteOption) | **DELETE** /v1/{tenantId}/option/{optionId} | Delete Option
+*GeminiCommerceJsClientProductConfigurator.OptionApi* | [**productConfiguratorListOptions**](docs/OptionApi.md#productConfiguratorListOptions) | **POST** /v1/{tenantId}/step/{stepId}/page-size/{pageSize}/options | List Options
+*GeminiCommerceJsClientProductConfigurator.OptionApi* | [**productConfiguratorUpdateOption**](docs/OptionApi.md#productConfiguratorUpdateOption) | **PUT** /v1/{tenantId}/option/{optionId} | Update Option
+*GeminiCommerceJsClientProductConfigurator.PropertyApi* | [**productConfiguratorBulkCreateProperties**](docs/PropertyApi.md#productConfiguratorBulkCreateProperties) | **POST** /v1/{tenantId}/property/create/bulk | Bulk Create Properties
+*GeminiCommerceJsClientProductConfigurator.PropertyApi* | [**productConfiguratorBulkUpdateProperties**](docs/PropertyApi.md#productConfiguratorBulkUpdateProperties) | **PUT** /v1/{tenantId}/properties/bulk | Bulk Update Properties
+*GeminiCommerceJsClientProductConfigurator.PropertyApi* | [**productConfiguratorCreateProperty**](docs/PropertyApi.md#productConfiguratorCreateProperty) | **POST** /v1/{tenantId}/property/create | Create Property
+*GeminiCommerceJsClientProductConfigurator.PropertyApi* | [**productConfiguratorListProperties**](docs/PropertyApi.md#productConfiguratorListProperties) | **POST** /v1/{tenantId}/matrix/{matrixId}/page-size/{pageSize}/properties | List Properties
+*GeminiCommerceJsClientProductConfigurator.PropertyApi* | [**productConfiguratorUpdateProperty**](docs/PropertyApi.md#productConfiguratorUpdateProperty) | **PUT** /v1/{tenantId}/property/{propertyId} | Update Property
+*GeminiCommerceJsClientProductConfigurator.StepApi* | [**productConfiguratorBulkCreateSteps**](docs/StepApi.md#productConfiguratorBulkCreateSteps) | **POST** /v1/{tenantId}/configurator/{configuratorId}/step/create/bulk | Bulk Create Steps
+*GeminiCommerceJsClientProductConfigurator.StepApi* | [**productConfiguratorBulkDeleteSteps**](docs/StepApi.md#productConfiguratorBulkDeleteSteps) | **POST** /v1/{tenantId}/step/delete/bulk | Bulk Delete Steps
+*GeminiCommerceJsClientProductConfigurator.StepApi* | [**productConfiguratorCopyStep**](docs/StepApi.md#productConfiguratorCopyStep) | **POST** /v1/{tenantId}/step/{sourceStepId}/copy | Copy Step
+*GeminiCommerceJsClientProductConfigurator.StepApi* | [**productConfiguratorCreateStep**](docs/StepApi.md#productConfiguratorCreateStep) | **POST** /v1/{tenantId}/configurator/{configuratorId}/step/create | Create Step
+*GeminiCommerceJsClientProductConfigurator.StepApi* | [**productConfiguratorDeleteStep**](docs/StepApi.md#productConfiguratorDeleteStep) | **DELETE** /v1/{tenantId}/step/{stepId} | Delete Step
+*GeminiCommerceJsClientProductConfigurator.StepApi* | [**productConfiguratorUpdateStep**](docs/StepApi.md#productConfiguratorUpdateStep) | **PUT** /v1/{tenantId}/step/{stepId} | Update Step
 
 
 ## Documentation for Models
 
- - [ProductConfiguratorService.ConfigurationConfigurationStep](docs/ConfigurationConfigurationStep.md)
- - [ProductConfiguratorService.ConfigurationConfigurator](docs/ConfigurationConfigurator.md)
- - [ProductConfiguratorService.ConfigurationGetAvailableConfigurationRequest](docs/ConfigurationGetAvailableConfigurationRequest.md)
- - [ProductConfiguratorService.ConfigurationGetAvailableConfigurationResponse](docs/ConfigurationGetAvailableConfigurationResponse.md)
- - [ProductConfiguratorService.ConfigurationGetConfigurationFromSelectionsRequest](docs/ConfigurationGetConfigurationFromSelectionsRequest.md)
- - [ProductConfiguratorService.ConfigurationGetConfigurationFromSelectionsResponse](docs/ConfigurationGetConfigurationFromSelectionsResponse.md)
- - [ProductConfiguratorService.ConfigurationOptionProperty](docs/ConfigurationOptionProperty.md)
- - [ProductConfiguratorService.ConfigurationProperty](docs/ConfigurationProperty.md)
- - [ProductConfiguratorService.ConfigurationPropertyFilter](docs/ConfigurationPropertyFilter.md)
- - [ProductConfiguratorService.ConfigurationPropertyFilterGenericProperty](docs/ConfigurationPropertyFilterGenericProperty.md)
- - [ProductConfiguratorService.ConfigurationSelection](docs/ConfigurationSelection.md)
- - [ProductConfiguratorService.ConfigurationStepOption](docs/ConfigurationStepOption.md)
- - [ProductConfiguratorService.ConfiguratorListRequest](docs/ConfiguratorListRequest.md)
- - [ProductConfiguratorService.ConfiguratorListResponse](docs/ConfiguratorListResponse.md)
- - [ProductConfiguratorService.DependencyCondition](docs/DependencyCondition.md)
- - [ProductConfiguratorService.DependencyListDependenciesRequest](docs/DependencyListDependenciesRequest.md)
- - [ProductConfiguratorService.DependencyListDependenciesResponse](docs/DependencyListDependenciesResponse.md)
- - [ProductConfiguratorService.GooglerpcStatus](docs/GooglerpcStatus.md)
- - [ProductConfiguratorService.ListMatricesRequestFilter](docs/ListMatricesRequestFilter.md)
- - [ProductConfiguratorService.LocalisationLocalizedText](docs/LocalisationLocalizedText.md)
- - [ProductConfiguratorService.MatrixGenericType](docs/MatrixGenericType.md)
- - [ProductConfiguratorService.MatrixListMatricesRequest](docs/MatrixListMatricesRequest.md)
- - [ProductConfiguratorService.MatrixListMatricesResponse](docs/MatrixListMatricesResponse.md)
- - [ProductConfiguratorService.MatrixPriceType](docs/MatrixPriceType.md)
- - [ProductConfiguratorService.MatrixWeightType](docs/MatrixWeightType.md)
- - [ProductConfiguratorService.OptionListOptionsRequest](docs/OptionListOptionsRequest.md)
- - [ProductConfiguratorService.OptionListOptionsResponse](docs/OptionListOptionsResponse.md)
- - [ProductConfiguratorService.OptionSwatch](docs/OptionSwatch.md)
- - [ProductConfiguratorService.ProductconfiguratorMoney](docs/ProductconfiguratorMoney.md)
- - [ProductConfiguratorService.ProductconfiguratorPropertyMode](docs/ProductconfiguratorPropertyMode.md)
- - [ProductConfiguratorService.ProductconfiguratorPropertyType](docs/ProductconfiguratorPropertyType.md)
- - [ProductConfiguratorService.ProductconfiguratorWeightUnit](docs/ProductconfiguratorWeightUnit.md)
- - [ProductConfiguratorService.ProductconfiguratorconfigurationOption](docs/ProductconfiguratorconfigurationOption.md)
- - [ProductConfiguratorService.ProductconfiguratorconfigurationStep](docs/ProductconfiguratorconfigurationStep.md)
- - [ProductConfiguratorService.ProductconfiguratorconfiguratorCopyRequest](docs/ProductconfiguratorconfiguratorCopyRequest.md)
- - [ProductConfiguratorService.ProductconfiguratorconfiguratorCreateRequest](docs/ProductconfiguratorconfiguratorCreateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratorconfiguratorEntity](docs/ProductconfiguratorconfiguratorEntity.md)
- - [ProductConfiguratorService.ProductconfiguratorconfiguratorStatus](docs/ProductconfiguratorconfiguratorStatus.md)
- - [ProductConfiguratorService.ProductconfiguratorconfiguratorUpdatePayload](docs/ProductconfiguratorconfiguratorUpdatePayload.md)
- - [ProductConfiguratorService.ProductconfiguratorconfiguratorUpdateRequest](docs/ProductconfiguratorconfiguratorUpdateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratordependencyCreateRequest](docs/ProductconfiguratordependencyCreateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratordependencyEntity](docs/ProductconfiguratordependencyEntity.md)
- - [ProductConfiguratorService.ProductconfiguratordependencyType](docs/ProductconfiguratordependencyType.md)
- - [ProductConfiguratorService.ProductconfiguratordependencyUpdatePayload](docs/ProductconfiguratordependencyUpdatePayload.md)
- - [ProductConfiguratorService.ProductconfiguratordependencyUpdateRequest](docs/ProductconfiguratordependencyUpdateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratormatrixCreateRequest](docs/ProductconfiguratormatrixCreateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratormatrixEntity](docs/ProductconfiguratormatrixEntity.md)
- - [ProductConfiguratorService.ProductconfiguratormatrixStep](docs/ProductconfiguratormatrixStep.md)
- - [ProductConfiguratorService.ProductconfiguratormatrixUpdatePayload](docs/ProductconfiguratormatrixUpdatePayload.md)
- - [ProductConfiguratorService.ProductconfiguratormatrixUpdateRequest](docs/ProductconfiguratormatrixUpdateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionBulkCreateRequest](docs/ProductconfiguratoroptionBulkCreateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionBulkCreateRequestCreateEntity](docs/ProductconfiguratoroptionBulkCreateRequestCreateEntity.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionBulkCreateResponse](docs/ProductconfiguratoroptionBulkCreateResponse.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionBulkDeleteRequest](docs/ProductconfiguratoroptionBulkDeleteRequest.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionBulkUpdateRequest](docs/ProductconfiguratoroptionBulkUpdateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionBulkUpdateRequestUpdateEntity](docs/ProductconfiguratoroptionBulkUpdateRequestUpdateEntity.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionBulkUpdateResponse](docs/ProductconfiguratoroptionBulkUpdateResponse.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionCopyRequest](docs/ProductconfiguratoroptionCopyRequest.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionCreateRequest](docs/ProductconfiguratoroptionCreateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionEntity](docs/ProductconfiguratoroptionEntity.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionUpdatePayload](docs/ProductconfiguratoroptionUpdatePayload.md)
- - [ProductConfiguratorService.ProductconfiguratoroptionUpdateRequest](docs/ProductconfiguratoroptionUpdateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyBulkCreateRequest](docs/ProductconfiguratorpropertyBulkCreateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyBulkCreateRequestCreateEntity](docs/ProductconfiguratorpropertyBulkCreateRequestCreateEntity.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyBulkCreateResponse](docs/ProductconfiguratorpropertyBulkCreateResponse.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyBulkUpdateRequest](docs/ProductconfiguratorpropertyBulkUpdateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyBulkUpdateRequestUpdateEntity](docs/ProductconfiguratorpropertyBulkUpdateRequestUpdateEntity.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyBulkUpdateResponse](docs/ProductconfiguratorpropertyBulkUpdateResponse.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyCreateRequest](docs/ProductconfiguratorpropertyCreateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyEntity](docs/ProductconfiguratorpropertyEntity.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyGenericProperty](docs/ProductconfiguratorpropertyGenericProperty.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyPriceProperty](docs/ProductconfiguratorpropertyPriceProperty.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyUpdatePayload](docs/ProductconfiguratorpropertyUpdatePayload.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyUpdateRequest](docs/ProductconfiguratorpropertyUpdateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratorpropertyWeightProperty](docs/ProductconfiguratorpropertyWeightProperty.md)
- - [ProductConfiguratorService.ProductconfiguratorstepBulkCreateRequest](docs/ProductconfiguratorstepBulkCreateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratorstepBulkCreateRequestCreateEntity](docs/ProductconfiguratorstepBulkCreateRequestCreateEntity.md)
- - [ProductConfiguratorService.ProductconfiguratorstepBulkCreateResponse](docs/ProductconfiguratorstepBulkCreateResponse.md)
- - [ProductConfiguratorService.ProductconfiguratorstepBulkDeleteRequest](docs/ProductconfiguratorstepBulkDeleteRequest.md)
- - [ProductConfiguratorService.ProductconfiguratorstepCopyRequest](docs/ProductconfiguratorstepCopyRequest.md)
- - [ProductConfiguratorService.ProductconfiguratorstepCreateRequest](docs/ProductconfiguratorstepCreateRequest.md)
- - [ProductConfiguratorService.ProductconfiguratorstepEntity](docs/ProductconfiguratorstepEntity.md)
- - [ProductConfiguratorService.ProductconfiguratorstepUpdatePayload](docs/ProductconfiguratorstepUpdatePayload.md)
- - [ProductConfiguratorService.ProductconfiguratorstepUpdateRequest](docs/ProductconfiguratorstepUpdateRequest.md)
- - [ProductConfiguratorService.PropertyListPropertiesRequest](docs/PropertyListPropertiesRequest.md)
- - [ProductConfiguratorService.PropertyListPropertiesResponse](docs/PropertyListPropertiesResponse.md)
- - [ProductConfiguratorService.PropertyUpdatePayloadGenericProperty](docs/PropertyUpdatePayloadGenericProperty.md)
- - [ProductConfiguratorService.PropertyUpdatePayloadPriceProperty](docs/PropertyUpdatePayloadPriceProperty.md)
- - [ProductConfiguratorService.PropertyUpdatePayloadWeightProperty](docs/PropertyUpdatePayloadWeightProperty.md)
- - [ProductConfiguratorService.ProtobufAny](docs/ProtobufAny.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationConfigurationStep](docs/ConfigurationConfigurationStep.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationConfigurator](docs/ConfigurationConfigurator.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationGetAvailableConfigurationRequest](docs/ConfigurationGetAvailableConfigurationRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationGetAvailableConfigurationResponse](docs/ConfigurationGetAvailableConfigurationResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationGetConfigurationFromSelectionsRequest](docs/ConfigurationGetConfigurationFromSelectionsRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationGetConfigurationFromSelectionsResponse](docs/ConfigurationGetConfigurationFromSelectionsResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationOptionProperty](docs/ConfigurationOptionProperty.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationProperty](docs/ConfigurationProperty.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationPropertyFilter](docs/ConfigurationPropertyFilter.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationPropertyFilterGenericProperty](docs/ConfigurationPropertyFilterGenericProperty.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationSelection](docs/ConfigurationSelection.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfigurationStepOption](docs/ConfigurationStepOption.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfiguratorListRequest](docs/ConfiguratorListRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ConfiguratorListResponse](docs/ConfiguratorListResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.DependencyCondition](docs/DependencyCondition.md)
+ - [GeminiCommerceJsClientProductConfigurator.DependencyListDependenciesRequest](docs/DependencyListDependenciesRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.DependencyListDependenciesResponse](docs/DependencyListDependenciesResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.GooglerpcStatus](docs/GooglerpcStatus.md)
+ - [GeminiCommerceJsClientProductConfigurator.ListMatricesRequestFilter](docs/ListMatricesRequestFilter.md)
+ - [GeminiCommerceJsClientProductConfigurator.LocalisationLocalizedText](docs/LocalisationLocalizedText.md)
+ - [GeminiCommerceJsClientProductConfigurator.MatrixGenericType](docs/MatrixGenericType.md)
+ - [GeminiCommerceJsClientProductConfigurator.MatrixListMatricesRequest](docs/MatrixListMatricesRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.MatrixListMatricesResponse](docs/MatrixListMatricesResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.MatrixPriceType](docs/MatrixPriceType.md)
+ - [GeminiCommerceJsClientProductConfigurator.MatrixWeightType](docs/MatrixWeightType.md)
+ - [GeminiCommerceJsClientProductConfigurator.OptionListOptionsRequest](docs/OptionListOptionsRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.OptionListOptionsResponse](docs/OptionListOptionsResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.OptionSwatch](docs/OptionSwatch.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorMoney](docs/ProductconfiguratorMoney.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorPropertyMode](docs/ProductconfiguratorPropertyMode.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorPropertyType](docs/ProductconfiguratorPropertyType.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorWeightUnit](docs/ProductconfiguratorWeightUnit.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorconfigurationOption](docs/ProductconfiguratorconfigurationOption.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorconfigurationStep](docs/ProductconfiguratorconfigurationStep.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorconfiguratorCopyRequest](docs/ProductconfiguratorconfiguratorCopyRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorconfiguratorCreateRequest](docs/ProductconfiguratorconfiguratorCreateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorconfiguratorEntity](docs/ProductconfiguratorconfiguratorEntity.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorconfiguratorStatus](docs/ProductconfiguratorconfiguratorStatus.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorconfiguratorUpdatePayload](docs/ProductconfiguratorconfiguratorUpdatePayload.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorconfiguratorUpdateRequest](docs/ProductconfiguratorconfiguratorUpdateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratordependencyCreateRequest](docs/ProductconfiguratordependencyCreateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratordependencyEntity](docs/ProductconfiguratordependencyEntity.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratordependencyType](docs/ProductconfiguratordependencyType.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratordependencyUpdatePayload](docs/ProductconfiguratordependencyUpdatePayload.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratordependencyUpdateRequest](docs/ProductconfiguratordependencyUpdateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratormatrixCreateRequest](docs/ProductconfiguratormatrixCreateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratormatrixEntity](docs/ProductconfiguratormatrixEntity.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratormatrixStep](docs/ProductconfiguratormatrixStep.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratormatrixUpdatePayload](docs/ProductconfiguratormatrixUpdatePayload.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratormatrixUpdateRequest](docs/ProductconfiguratormatrixUpdateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionBulkCreateRequest](docs/ProductconfiguratoroptionBulkCreateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionBulkCreateRequestCreateEntity](docs/ProductconfiguratoroptionBulkCreateRequestCreateEntity.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionBulkCreateResponse](docs/ProductconfiguratoroptionBulkCreateResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionBulkDeleteRequest](docs/ProductconfiguratoroptionBulkDeleteRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionBulkUpdateRequest](docs/ProductconfiguratoroptionBulkUpdateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionBulkUpdateRequestUpdateEntity](docs/ProductconfiguratoroptionBulkUpdateRequestUpdateEntity.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionBulkUpdateResponse](docs/ProductconfiguratoroptionBulkUpdateResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionCopyRequest](docs/ProductconfiguratoroptionCopyRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionCreateRequest](docs/ProductconfiguratoroptionCreateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionEntity](docs/ProductconfiguratoroptionEntity.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionUpdatePayload](docs/ProductconfiguratoroptionUpdatePayload.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratoroptionUpdateRequest](docs/ProductconfiguratoroptionUpdateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyBulkCreateRequest](docs/ProductconfiguratorpropertyBulkCreateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyBulkCreateRequestCreateEntity](docs/ProductconfiguratorpropertyBulkCreateRequestCreateEntity.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyBulkCreateResponse](docs/ProductconfiguratorpropertyBulkCreateResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyBulkUpdateRequest](docs/ProductconfiguratorpropertyBulkUpdateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyBulkUpdateRequestUpdateEntity](docs/ProductconfiguratorpropertyBulkUpdateRequestUpdateEntity.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyBulkUpdateResponse](docs/ProductconfiguratorpropertyBulkUpdateResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyCreateRequest](docs/ProductconfiguratorpropertyCreateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyEntity](docs/ProductconfiguratorpropertyEntity.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyGenericProperty](docs/ProductconfiguratorpropertyGenericProperty.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyPriceProperty](docs/ProductconfiguratorpropertyPriceProperty.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyUpdatePayload](docs/ProductconfiguratorpropertyUpdatePayload.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyUpdateRequest](docs/ProductconfiguratorpropertyUpdateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorpropertyWeightProperty](docs/ProductconfiguratorpropertyWeightProperty.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepBulkCreateRequest](docs/ProductconfiguratorstepBulkCreateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepBulkCreateRequestCreateEntity](docs/ProductconfiguratorstepBulkCreateRequestCreateEntity.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepBulkCreateResponse](docs/ProductconfiguratorstepBulkCreateResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepBulkDeleteRequest](docs/ProductconfiguratorstepBulkDeleteRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepCopyRequest](docs/ProductconfiguratorstepCopyRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepCreateRequest](docs/ProductconfiguratorstepCreateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepEntity](docs/ProductconfiguratorstepEntity.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepUpdatePayload](docs/ProductconfiguratorstepUpdatePayload.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProductconfiguratorstepUpdateRequest](docs/ProductconfiguratorstepUpdateRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.PropertyListPropertiesRequest](docs/PropertyListPropertiesRequest.md)
+ - [GeminiCommerceJsClientProductConfigurator.PropertyListPropertiesResponse](docs/PropertyListPropertiesResponse.md)
+ - [GeminiCommerceJsClientProductConfigurator.PropertyUpdatePayloadGenericProperty](docs/PropertyUpdatePayloadGenericProperty.md)
+ - [GeminiCommerceJsClientProductConfigurator.PropertyUpdatePayloadPriceProperty](docs/PropertyUpdatePayloadPriceProperty.md)
+ - [GeminiCommerceJsClientProductConfigurator.PropertyUpdatePayloadWeightProperty](docs/PropertyUpdatePayloadWeightProperty.md)
+ - [GeminiCommerceJsClientProductConfigurator.ProtobufAny](docs/ProtobufAny.md)
 
 
 ## Documentation for Authorization

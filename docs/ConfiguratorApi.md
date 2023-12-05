@@ -1,4 +1,4 @@
-# ProductConfiguratorService.ConfiguratorApi
+# GeminiCommerceJsClientProductConfigurator.ConfiguratorApi
 
 All URIs are relative to *https://product-configurator.api.gogemini.io*
 
@@ -25,16 +25,16 @@ Duplicate an existing product configurator from the source to the specified tena
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.ConfiguratorApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.ConfiguratorApi();
 let tenantId = "tenantId_example"; // String | 
 let sourceConfiguratorId = "sourceConfiguratorId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorconfiguratorCopyRequest(); // ProductconfiguratorconfiguratorCopyRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorconfiguratorCopyRequest(); // ProductconfiguratorconfiguratorCopyRequest | 
 apiInstance.productConfiguratorCopyConfigurator(tenantId, sourceConfiguratorId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -78,16 +78,16 @@ Create a new product configurator for a specified tenant and product. Submit the
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.ConfiguratorApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.ConfiguratorApi();
 let tenantId = "tenantId_example"; // String | 
 let productId = "productId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorconfiguratorCreateRequest(); // ProductconfiguratorconfiguratorCreateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorconfiguratorCreateRequest(); // ProductconfiguratorconfiguratorCreateRequest | 
 apiInstance.productConfiguratorCreateConfigurator(tenantId, productId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -131,13 +131,13 @@ Delete a product configurator by specifying the tenant and configurator IDs. Ens
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.ConfiguratorApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.ConfiguratorApi();
 let tenantId = "tenantId_example"; // String | 
 let configuratorId = "configuratorId_example"; // String | 
 apiInstance.productConfiguratorDeleteConfigurator(tenantId, configuratorId, (error, data, response) => {
@@ -182,13 +182,13 @@ Get a product configurator by product ID.
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.ConfiguratorApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.ConfiguratorApi();
 let tenantId = "tenantId_example"; // String | 
 let productId = "productId_example"; // String | 
 let opts = {
@@ -237,13 +237,13 @@ Get a product configurator by product ID.
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.ConfiguratorApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.ConfiguratorApi();
 let tenantId = "tenantId_example"; // String | 
 let productId = "productId_example"; // String | 
 let status = "status_example"; // String | 
@@ -290,17 +290,17 @@ List all product configurators.
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.ConfiguratorApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.ConfiguratorApi();
 let tenantId = "tenantId_example"; // String | 
 let productId = "productId_example"; // String | 
 let pageSize = 789; // Number | 
-let body = new ProductConfiguratorService.ConfiguratorListRequest(); // ConfiguratorListRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ConfiguratorListRequest(); // ConfiguratorListRequest | 
 apiInstance.productConfiguratorListConfigurators(tenantId, productId, pageSize, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -345,16 +345,16 @@ Modify an existing product configurator by specifying the tenant and configurato
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.ConfiguratorApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.ConfiguratorApi();
 let tenantId = "tenantId_example"; // String | 
 let configuratorId = "configuratorId_example"; // String | 
-let body = new ProductConfiguratorService.ProductconfiguratorconfiguratorUpdateRequest(); // ProductconfiguratorconfiguratorUpdateRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ProductconfiguratorconfiguratorUpdateRequest(); // ProductconfiguratorconfiguratorUpdateRequest | 
 apiInstance.productConfiguratorUpdateConfigurator(tenantId, configuratorId, body, (error, data, response) => {
   if (error) {
     console.error(error);

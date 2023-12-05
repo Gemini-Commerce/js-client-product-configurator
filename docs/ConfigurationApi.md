@@ -1,4 +1,4 @@
-# ProductConfiguratorService.ConfigurationApi
+# GeminiCommerceJsClientProductConfigurator.ConfigurationApi
 
 All URIs are relative to *https://product-configurator.api.gogemini.io*
 
@@ -21,13 +21,13 @@ Retrieve available configurations for a specific product and tenant. Use a GET r
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.ConfigurationApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.ConfigurationApi();
 let tenantId = "tenantId_example"; // String | 
 let productId = "productId_example"; // String | 
 let opts = {
@@ -76,16 +76,16 @@ Retrieve available configurations for a specific product and tenant. Use a GET r
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.ConfigurationApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.ConfigurationApi();
 let tenantId = "tenantId_example"; // String | 
 let productId = "productId_example"; // String | 
-let body = new ProductConfiguratorService.ConfigurationGetAvailableConfigurationRequest(); // ConfigurationGetAvailableConfigurationRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ConfigurationGetAvailableConfigurationRequest(); // ConfigurationGetAvailableConfigurationRequest | 
 apiInstance.productConfiguratorGetAvailableConfiguration2(tenantId, productId, body, (error, data, response) => {
   if (error) {
     console.error(error);
@@ -129,16 +129,16 @@ Retrieve a configuration based on user selections for a specific product and ten
 ### Example
 
 ```javascript
-import ProductConfiguratorService from 'product_configurator_service';
-let defaultClient = ProductConfiguratorService.ApiClient.instance;
+import GeminiCommerceJsClientProductConfigurator from '@gemini-commerce/js-client-product-configurator';
+let defaultClient = GeminiCommerceJsClientProductConfigurator.ApiClient.instance;
 // Configure OAuth2 access token for authorization: standardAuthorization
 let standardAuthorization = defaultClient.authentications['standardAuthorization'];
 standardAuthorization.accessToken = 'YOUR ACCESS TOKEN';
 
-let apiInstance = new ProductConfiguratorService.ConfigurationApi();
+let apiInstance = new GeminiCommerceJsClientProductConfigurator.ConfigurationApi();
 let tenantId = "tenantId_example"; // String | 
 let productId = "productId_example"; // String | 
-let body = new ProductConfiguratorService.ConfigurationGetConfigurationFromSelectionsRequest(); // ConfigurationGetConfigurationFromSelectionsRequest | 
+let body = new GeminiCommerceJsClientProductConfigurator.ConfigurationGetConfigurationFromSelectionsRequest(); // ConfigurationGetConfigurationFromSelectionsRequest | 
 apiInstance.productConfiguratorGetConfigurationFromSelections(tenantId, productId, body, (error, data, response) => {
   if (error) {
     console.error(error);

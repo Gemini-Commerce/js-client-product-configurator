@@ -118,9 +118,9 @@ import StepApi from './api/StepApi';
 * <p>
 * An AMD (recommended!) or CommonJS application will generally do something equivalent to the following:
 * <pre>
-* var ProductConfiguratorService = require('index'); // See note below*.
-* var xxxSvc = new ProductConfiguratorService.XxxApi(); // Allocate the API class we're going to use.
-* var yyyModel = new ProductConfiguratorService.Yyy(); // Construct a model instance.
+* var GeminiCommerceJsClientProductConfigurator = require('index'); // See note below*.
+* var xxxSvc = new GeminiCommerceJsClientProductConfigurator.XxxApi(); // Allocate the API class we're going to use.
+* var yyyModel = new GeminiCommerceJsClientProductConfigurator.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
@@ -132,8 +132,8 @@ import StepApi from './api/StepApi';
 * <p>
 * A non-AMD browser application (discouraged) might do something like this:
 * <pre>
-* var xxxSvc = new ProductConfiguratorService.XxxApi(); // Allocate the API class we're going to use.
-* var yyy = new ProductConfiguratorService.Yyy(); // Construct a model instance.
+* var xxxSvc = new GeminiCommerceJsClientProductConfigurator.XxxApi(); // Allocate the API class we're going to use.
+* var yyy = new GeminiCommerceJsClientProductConfigurator.Yyy(); // Construct a model instance.
 * yyyModel.someProperty = 'someValue';
 * ...
 * var zzz = xxxSvc.doSomething(yyyModel); // Invoke the service.
